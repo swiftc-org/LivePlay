@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24FAC22E1D1174490023F708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC22D1D1174490023F708 /* AppDelegate.swift */; };
+		24FAC2351D1174490023F708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FAC2341D1174490023F708 /* Assets.xcassets */; };
+		24FAC2381D1174490023F708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FAC2361D1174490023F708 /* LaunchScreen.storyboard */; };
+		24FAC2681D1176D80023F708 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC2591D1176D80023F708 /* amf.c */; };
+		24FAC2691D1176D80023F708 /* hashswf.c in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC25F1D1176D80023F708 /* hashswf.c */; };
+		24FAC26A1D1176D80023F708 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC2611D1176D80023F708 /* log.c */; };
+		24FAC26B1D1176D80023F708 /* parseurl.c in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC2631D1176D80023F708 /* parseurl.c */; };
+		24FAC26C1D1176D80023F708 /* rtmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC2641D1176D80023F708 /* rtmp.c */; };
+		24FAC26D1D1176D80023F708 /* RTMPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC2671D1176D80023F708 /* RTMPClient.swift */; };
+		24FAC2701D1176FB0023F708 /* UtilityTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC26F1D1176FB0023F708 /* UtilityTool.swift */; };
+		24FAC2721D1177B20023F708 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FAC2711D1177B20023F708 /* PlayViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24FAC22A1D1174490023F708 /* LivePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FAC22D1D1174490023F708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24FAC2341D1174490023F708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24FAC2371D1174490023F708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24FAC2391D1174490023F708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FAC2591D1176D80023F708 /* amf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amf.c; sourceTree = "<group>"; };
+		24FAC25A1D1176D80023F708 /* amf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amf.h; sourceTree = "<group>"; };
+		24FAC25B1D1176D80023F708 /* bytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytes.h; sourceTree = "<group>"; };
+		24FAC25C1D1176D80023F708 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		24FAC25D1D1176D80023F708 /* dhgroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhgroups.h; sourceTree = "<group>"; };
+		24FAC25E1D1176D80023F708 /* handshake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handshake.h; sourceTree = "<group>"; };
+		24FAC25F1D1176D80023F708 /* hashswf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashswf.c; sourceTree = "<group>"; };
+		24FAC2601D1176D80023F708 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		24FAC2611D1176D80023F708 /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = log.c; sourceTree = "<group>"; };
+		24FAC2621D1176D80023F708 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		24FAC2631D1176D80023F708 /* parseurl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parseurl.c; sourceTree = "<group>"; };
+		24FAC2641D1176D80023F708 /* rtmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rtmp.c; sourceTree = "<group>"; };
+		24FAC2651D1176D80023F708 /* rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp.h; sourceTree = "<group>"; };
+		24FAC2661D1176D80023F708 /* rtmp_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp_sys.h; sourceTree = "<group>"; };
+		24FAC2671D1176D80023F708 /* RTMPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTMPClient.swift; sourceTree = "<group>"; };
+		24FAC26F1D1176FB0023F708 /* UtilityTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityTool.swift; sourceTree = "<group>"; };
+		24FAC2711D1177B20023F708 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24FAC2271D1174490023F708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24FAC2211D1174480023F708 = {
+			isa = PBXGroup;
+			children = (
+				24FAC22C1D1174490023F708 /* LivePlay */,
+				24FAC22B1D1174490023F708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24FAC22B1D1174490023F708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24FAC22A1D1174490023F708 /* LivePlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24FAC22C1D1174490023F708 /* LivePlay */ = {
+			isa = PBXGroup;
+			children = (
+				24FAC26E1D1176FB0023F708 /* UtilityTool */,
+				24FAC2581D1176D80023F708 /* Rtmp */,
+				24FAC22D1D1174490023F708 /* AppDelegate.swift */,
+				24FAC2711D1177B20023F708 /* PlayViewController.swift */,
+				24FAC2341D1174490023F708 /* Assets.xcassets */,
+				24FAC2361D1174490023F708 /* LaunchScreen.storyboard */,
+				24FAC2391D1174490023F708 /* Info.plist */,
+			);
+			path = LivePlay;
+			sourceTree = "<group>";
+		};
+		24FAC2581D1176D80023F708 /* Rtmp */ = {
+			isa = PBXGroup;
+			children = (
+				24FAC2591D1176D80023F708 /* amf.c */,
+				24FAC25A1D1176D80023F708 /* amf.h */,
+				24FAC25B1D1176D80023F708 /* bytes.h */,
+				24FAC25C1D1176D80023F708 /* dh.h */,
+				24FAC25D1D1176D80023F708 /* dhgroups.h */,
+				24FAC25E1D1176D80023F708 /* handshake.h */,
+				24FAC25F1D1176D80023F708 /* hashswf.c */,
+				24FAC2601D1176D80023F708 /* http.h */,
+				24FAC2611D1176D80023F708 /* log.c */,
+				24FAC2621D1176D80023F708 /* log.h */,
+				24FAC2631D1176D80023F708 /* parseurl.c */,
+				24FAC2641D1176D80023F708 /* rtmp.c */,
+				24FAC2651D1176D80023F708 /* rtmp.h */,
+				24FAC2661D1176D80023F708 /* rtmp_sys.h */,
+				24FAC2671D1176D80023F708 /* RTMPClient.swift */,
+			);
+			path = Rtmp;
+			sourceTree = "<group>";
+		};
+		24FAC26E1D1176FB0023F708 /* UtilityTool */ = {
+			isa = PBXGroup;
+			children = (
+				24FAC26F1D1176FB0023F708 /* UtilityTool.swift */,
+			);
+			path = UtilityTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24FAC2291D1174490023F708 /* LivePlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FAC23C1D1174490023F708 /* Build configuration list for PBXNativeTarget "LivePlay" */;
+			buildPhases = (
+				24FAC2261D1174490023F708 /* Sources */,
+				24FAC2271D1174490023F708 /* Frameworks */,
+				24FAC2281D1174490023F708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LivePlay;
+			productName = LivePlay;
+			productReference = 24FAC22A1D1174490023F708 /* LivePlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24FAC2221D1174480023F708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = swiftc.org;
+				TargetAttributes = {
+					24FAC2291D1174490023F708 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 24FAC2251D1174480023F708 /* Build configuration list for PBXProject "LivePlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24FAC2211D1174480023F708;
+			productRefGroup = 24FAC22B1D1174490023F708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24FAC2291D1174490023F708 /* LivePlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24FAC2281D1174490023F708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FAC2381D1174490023F708 /* LaunchScreen.storyboard in Resources */,
+				24FAC2351D1174490023F708 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24FAC2261D1174490023F708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FAC2681D1176D80023F708 /* amf.c in Sources */,
+				24FAC26C1D1176D80023F708 /* rtmp.c in Sources */,
+				24FAC26B1D1176D80023F708 /* parseurl.c in Sources */,
+				24FAC26A1D1176D80023F708 /* log.c in Sources */,
+				24FAC26D1D1176D80023F708 /* RTMPClient.swift in Sources */,
+				24FAC2721D1177B20023F708 /* PlayViewController.swift in Sources */,
+				24FAC2691D1176D80023F708 /* hashswf.c in Sources */,
+				24FAC22E1D1174490023F708 /* AppDelegate.swift in Sources */,
+				24FAC2701D1176FB0023F708 /* UtilityTool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24FAC2361D1174490023F708 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24FAC2371D1174490023F708 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24FAC23A1D1174490023F708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24FAC23B1D1174490023F708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24FAC23D1D1174490023F708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LivePlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = swiftc.org.LivePlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = LivePlay/Rtmp/rtmp.h;
+			};
+			name = Debug;
+		};
+		24FAC23E1D1174490023F708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LivePlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = swiftc.org.LivePlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = LivePlay/Rtmp/rtmp.h;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24FAC2251D1174480023F708 /* Build configuration list for PBXProject "LivePlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FAC23A1D1174490023F708 /* Debug */,
+				24FAC23B1D1174490023F708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FAC23C1D1174490023F708 /* Build configuration list for PBXNativeTarget "LivePlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FAC23D1D1174490023F708 /* Debug */,
+				24FAC23E1D1174490023F708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24FAC2221D1174480023F708 /* Project object */;
+}
