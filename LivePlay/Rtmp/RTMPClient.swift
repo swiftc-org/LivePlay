@@ -38,8 +38,6 @@ class RTMPClient {
             return false
         }
         
-        RTMP_EnableWrite(rtmp)
-        
         let connectResult = RTMP_Connect(rtmp, nil)
         guard connectResult != 0 else {
             print("RTMP_Connect failed")
@@ -53,6 +51,17 @@ class RTMPClient {
         }
         
         return isConnected
+    }
+    
+    func readAudio() {
+        
+        var packet = RTMPPacket()
+        while RTMP_ReadPacket(rtmp, &packet) != 0 {
+            print("packet:\(packet)")
+            //RTMPPacket_Dump(&packet)
+            RTMPPacket_Free(&packet)
+        }
+        
     }
     
     func close() {

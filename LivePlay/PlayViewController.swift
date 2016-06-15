@@ -10,6 +10,10 @@ import UIKit
 
 class PlayViewController: UIViewController {
 
+    // private let urlStr = "rtmp://swiftc.org/live/livestream"
+    private let urlStr = "rtmp://192.168.1.107/live/livestream"
+    private let rtmpClient = RTMPClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +22,8 @@ class PlayViewController: UIViewController {
         view.addSubview(connectButton)
         
         view.addSubview(playButton)
+        
+        rtmpClient.setLogLevel = RTMP_LOGDEBUG //RTMP_LOGALL
     }
     
     private let commonBtnW = CGFloat(100)
@@ -33,7 +39,7 @@ class PlayViewController: UIViewController {
         
         let button = UIButton(frame: buttonF)
         button.backgroundColor = UIColor.greenColor()
-        button.setTitle("encode", forState: .Normal)
+        button.setTitle("connect", forState: .Normal)
         button.addTarget(self,
                          action: #selector(connect),
                          forControlEvents: .TouchUpInside)
@@ -61,16 +67,26 @@ class PlayViewController: UIViewController {
     }
     
     dynamic func connect() {
-        print(#function)
+        
+        if rtmpClient.connect(urlStr) {
+            print("connect succeed")
+        } else {
+            print("connect failed")
+        }
     }
     
     dynamic func play() {
-        print(#function)
+        
+        guard rtmpClient.isConnected else {
+            print("have not connected")
+            return
+        }
+        
+        rtmpClient.readAudio()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
         
     }
     
